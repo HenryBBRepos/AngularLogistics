@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+- 10
+branches:
+  only:
+  - master
+notifications:
+  email: false
+  slack:
+    rooms:
+    - cliqhaul:E6sxZAiNHPYRygFmZb1fuk6h#cliqhaul-dev
+cache:
+  directories:
+  - "./node_modules"
+install:
+- npm install
+- npm install -g @angular/cli
+before_deploy:
+- ng build
+deploy:
+  provider: s3
+  access_key_id: AKIAQ6XJOC3GSPOIRQXO
+  secret_access_key: $secret_access_key
+  bucket: cliqhaul-site
+  skip_cleanup: true
+  local_dir: dist/cliqhaul-ui
+env:
+  global:
+    secure: gWMbYLeYbgFNWiEZdbYofF/ERw7flc58z+8MOK7k6RKhXMRSLUnbGstlHRoSTXxQmd8ufjff6Wi1YRBjhEdVw2GX1jLXZyC9qX+HObxC2l2APFr6qt9DTJjfE1lRb/e3Hy2PNEL5Qa+vokFqON0HCF8wSCWBxk7EOcPUZnQDbgN5t0yS6lwsODNV66h8Iflr1b5GxJulnk5wGnegbr39xvTLn72V9jd1LvYt0q01qwAi40EYn0CxNI+ACZMC5TlYqBMosjxpyDkkr8zH/tlWoK0SVNHaUNwx7TcetTus7Ty/5u/s5rtcBhqIFbc4beFqo0LDlEojDefPR3efEa07oayGEcX0IkIYhLgUwAj1Y1LiyCY4afTZ9Fy+VM3yPewwbocIbbuJvU6WZ2tGABqnGnkbIJeErxMMP9q4AFaFS3oJMOEqUIHUBQ2HBIxtfBPsPtZoJrU9wd40ylJosXgVJLfzN7+8txELmCurJL7n4aNEVc90rBREm1oM+TWbMeRvI3XiOMhkhPE45gxfi4j3nn7uxmSbiM92tNpycDisEd1eQJuavkBhR/ODIA6lcGckOhZwTn4ct94GGxSTEFfSDRir3voVHnvl94c/PecwkjnpxsowoUP76Di1MKp6rpOfn4O9COWT37SulvG6ayOjdUqXv1oYxehzgJjM3HkHkmw=

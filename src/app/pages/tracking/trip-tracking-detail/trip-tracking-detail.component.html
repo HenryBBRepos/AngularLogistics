@@ -1,0 +1,133 @@
+
+  <div class="mat-spinner-box" *ngIf="isLoading">
+    <mat-spinner
+      class="mat-spinner"
+      [diameter]="50"
+      [strokeWidth]="4"
+      [value]="3">
+
+    </mat-spinner>
+    <p>Loading...</p>
+  </div>
+
+
+<div class="container" *ngIf="!blankState">
+
+  <div class="row">
+
+    <div class="col-lg-12">
+
+      <div class="card card-deep-blue">
+
+        <div class="card-body">
+          <p>Origin of the Journey: <span>Indore, Madhya Pradesh 452020</span></p>
+          <p>Destination: <span>Maharastra 424002</span></p>
+          <p>Price : <span>$350</span></p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-lg-12 padding-top-40">
+
+      <div class="card">
+
+        <div class="card-header">
+
+          <h4>Driver</h4>
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="tracking-cell">
+
+              <div>
+                  <img src="assets/images/placeholder.png" class="img img-responsive" alt="profile picture"/>
+              </div>
+
+              <div>
+                  <p>Full Name: <span>John Doe</span></p>
+                  <p>Phone Number:<span>+2338993829</span> </p>
+                  <p>Address: <span>79 Torreno Lorem</span></p>
+                <hr>
+              </div>
+
+            </div>
+
+            <div class="tracking-cell">
+
+            <div>
+              <h6>Driver License</h6>
+            </div>
+
+            <div>
+              <p>Number: <span>John Doe</span></p>
+              <p>Issue Date:<span>07/13/2017</span> </p>
+              <p>Expiry Date:<span>07/13/2017</span> </p>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="col-lg-12 padding-top-40">
+
+      <div class="card">
+
+        <div class="card-header">
+
+          <h4>Vehicle</h4>
+
+        </div>
+
+        <div class="card-body">
+
+          <div class="tracking-cell">
+
+            <div>
+              <h6>General Information</h6>
+            </div>
+
+            <div>
+              <p>Model: <span>DAF CF 63.220</span></p>
+              <p>Registration Number:<span>AA-889-90</span> </p>
+              <p>Car Type: <span>Truck</span></p>
+              <p>Number of Weight: <span>3.5T</span></p>
+              <hr>
+            </div>
+
+          </div>
+
+          <div class="tracking-cell">
+
+            <div>
+              <h6>Insurance</h6>
+            </div>
+
+            <div>
+              <p>Insurance Company: <span>N/A</span></p>
+              <p>Issue Date:<span>07/13/2017</span> </p>
+              <p>Expiry Date:<span>07/13/2017</span> </p>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>

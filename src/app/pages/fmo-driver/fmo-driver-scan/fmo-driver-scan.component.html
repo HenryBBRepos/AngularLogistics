@@ -1,0 +1,118 @@
+<div class="page-container-section">
+    <div class="page-heading">
+      <h4>Scan</h4>
+    </div>
+  
+    <div class="row padding-top-20">
+      <div class="col-lg-12">
+        <div class="card card-profile">
+        
+          <div class="profile-details">
+            <h5>Scan 2/2 - Driver Scan</h5><hr>
+            <div class="details">
+              <table class="table table-borderless" aria-describedby="profile-form">
+                <tbody>
+                <tr>
+                  <td>
+                    <div class="container main-content">
+                        <div class="row">
+                        
+                          <div class="col-6">
+                            <div class="qr-code-content">
+                              <qrcode [qrdata]="'Vehicle QRcode'" class="qr-code"
+                              [width]="180"
+                              [errorCorrectionLevel]="'M'"
+                              [elementType]="'svg'">
+                            </qrcode>
+                        
+                            </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+                  </td>
+                  <td>
+                   <div class="progress-content">
+                    <h4>Progress</h4>
+                    <button class="btn btn-default btn-block btn-qr" routerLink="">
+                        Completed
+                    </button>
+                   </div>
+                  </td>
+
+                </tr>
+              
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row padding-top-20">
+        <div class="col-lg-12">
+          <div class="card card-profile">
+          
+            <div class="profile-details">
+              <h5>Driver</h5><hr>
+              <div class="details">
+                <table class="table table-borderless" aria-describedby="profile-form">
+                  <tbody>
+                  <tr>
+                    <td>
+                        <div class="profile-upload" align="left">
+                            <img src="https://i2.wp.com/worldbusinessfitness.com/wp-content/uploads/2018/01/opulent-profile-square-07.jpg?ssl=1" class="main-profile-img" />
+                            </div>
+                    </td>
+                    <td>
+                      <div class="container main-content">
+                          <div class="row">
+                            <div class="col-6">
+                                <div class="vehicle-detail-content">
+                                    <p>Full Name: <b>Mark Forson</b></p>
+                                    <p>Phone Number: <b>+233 545 545 5454</b></p>
+                                    <p>Address: <b>344 Street Accra Ghana</b></p>
+                                  </div>
+                            </div>
+                        
+                          </div><hr>
+                        </div>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td>Driver License</td>
+                    <td>
+                      <div class="container main-content">
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="vehicle-detail-content">
+                                <p> Number: <b>977454</b></p>
+                                <p>Issue Date: <b>07/20</b> &nbsp;&nbsp; Issue Expire <b>07/21</b></p>
+                              </div>
+                            </div>
+                        
+                          </div><hr>
+                        </div>
+                    </td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+     <div class="next-content">
+        <button class="btn btn-default btn-block btn-next" routerLink="../fmo-create-transaction">
+            Next <span class="ion-chevron-right"></span>
+        </button>
+     </div>
+<br><br>
+  </div>
+  

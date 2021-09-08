@@ -1,0 +1,72 @@
+@import "src/color";
+.page-container-section {
+  //height: 100vh;
+}
+.mb-3 {
+  width: 30%;
+}
+
+.mb-3:first-child {
+  margin-left: 10px;
+}
+
+.card {
+  .card-header {
+    background: transparent;
+    border: none;
+    padding: 15px;
+  }
+
+  .card-body {
+    padding-top: 0 !important;
+  }
+}
+
+.list-group-item {
+  display: grid;
+  grid-template-columns: 18% 82%;
+  border: none;
+}
+
+.list-group-item > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+}
+
+.profile-info {
+  padding: 6px;
+  text-align: left;
+  span {
+    font-weight: 100;
+  }
+}
+
+.card-stats {
+  border-radius: 10px;
+}
+
+.card-stats > .card-body {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bolder;
+  color: #775E7F;
+  h4{
+    font-size: 1.387em;
+  }
+  p {
+    margin-bottom: 0;
+    span {
+      color: #55F176;
+      font-size: 1.187em;
+    }
+    span:last-child {
+      color: #775E7F;
+      font-size: 0.677rem;
+    }
+  }
+}
+
+
+
+

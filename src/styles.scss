@@ -1,0 +1,274 @@
+html, body { height: 100%; }
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$cliqhaul-ui-primary: mat-palette($mat-indigo);
+$cliqhaul-ui-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$cliqhaul-ui-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$cliqhaul-ui-theme: mat-light-theme($cliqhaul-ui-primary, $cliqhaul-ui-accent, $cliqhaul-ui-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($cliqhaul-ui-theme);
+
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+          font-family: "Circular Std Medium";
+          src: url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot"); src: url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff") format("woff"),
+          url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.ttf") format("truetype"),
+          url("//db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.svg#Circular Std Medium") format("svg");
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Roboto+Mono&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,500&display=swap');
+@import "spinner-loader";
+@import "icons";
+@import "color";
+
+
+
+
+h1,h2,h3,h4,h5,h6{
+  color: $deep-blue;
+  font-size: .900rem;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background: #fff;
+}
+
+
+.card{
+  position: inherit !important;
+}
+%card{
+  background: #fff;
+  width: auto;
+  height: auto;
+}
+
+%card-internal{
+  width: 100%;
+  border: none;
+  background: transparent;
+}
+
+/** Registration Card **/
+.card-register{
+  @extend %card;
+  padding: 30px;
+  border-radius: 10px;
+  .card-header{
+    @extend %card-internal
+  }
+  .card-body{
+    @extend %card-internal
+  }
+}
+
+.card-default{
+   @extend %card;
+   padding: 20px;
+   .card-header{
+     @extend %card-internal
+   }
+  .card-body{
+    @extend %card-internal
+  }
+}
+
+.form-control-c{
+   background-color: $input-bg;
+   border: 1px solid transparent;
+   height: calc(1.5em + .75rem + 9px);
+  border-radius: 5px;
+}
+
+.btn-cliqhaul-primary{
+   background-color: $secondary;
+   color: #fff;
+   padding: .600rem .75rem;
+}
+
+.btn-cliqhaul-primary:hover{
+  background-color: $secondary;
+}
+
+
+// Loading Spinner
+.clq-spinner{
+  content: url("assets/svg/spinner.svg");
+  width: 50px;
+  height: 50px;
+}
+
+* {
+  outline: none !important;
+}
+
+.active{
+  border: 2px solid transparent;
+  border-right-color: $deep-blue;
+}
+
+
+.hide{
+  display: none;
+}
+
+
+.btn:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+p,a,span,li,td,input,select,button{
+  font-size: .900rem;
+}
+
+.page-container{
+  width: 100%;
+  padding: 20px;
+  background: #EFEFEF !important;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 20% 80%;
+
+
+  .page-heading{
+    text-align: left;
+    h4{
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  }
+
+  .col-lg-12{
+    position: static !important;
+  }
+}
+
+.padding-top-20{
+  padding-top: 20px;
+}
+
+.padding-top-40 {
+  padding-top: 40px;
+}
+
+.page-heading{
+  text-align: left;
+  h4{
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+}
+
+
+.btn-sticky{
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  background: #FDC664;
+  box-shadow: 0 0 10px 0 rgba(2, 3, 3, 0.1);
+}
+
+.page-container-section {
+  background: #EFEFEF;
+  padding: 20px;
+}
+
+.breadcrumb {
+  width: 400px;
+  background: transparent;
+}
+
+.breadcrumb-item > h4 {
+  padding: 2px;
+  font-size: .900rem !important;
+}
+
+.form-group-inline {
+  display: flex;
+
+  label {
+    width: 30%;
+    font-size: .900rem;
+    text-align: left;
+  }
+
+  input {
+    width: 50%;
+  }
+}
+
+.card-header {
+  text-align: left;
+}
+
+.welcome-page {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  .card {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 30px;
+
+    .card-header {
+      text-align: left;
+      border: none;
+      background: transparent;
+
+      h4 {
+        line-height: 3.900rem;
+        font-size: 2.0rem;
+      }
+    }
+
+    .form-control {
+      background: $input-bg;
+      border: none;
+      padding: 1.399rem;
+      outline-color: #FDC664 !important;
+    }
+
+
+    .btn-login {
+      background: $primary-yellow;
+      color: #000;
+      padding: 15px;
+      margin-top: 8px;
+    }
+  }
+}
+.alert {
+  font-size: .999rem !important;
+  h4 {
+    text-align: left;
+  }
+  p{
+    text-align: left;
+  }
+}

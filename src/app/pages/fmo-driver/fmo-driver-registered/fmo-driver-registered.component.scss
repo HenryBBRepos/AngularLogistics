@@ -1,0 +1,146 @@
+@import "src/color";
+
+section {
+    padding: 0 23px 0 23px;
+  }
+  
+  .card > .card-header {
+    text-align: left;
+    background: transparent;
+    border: none;
+    h4 {
+      font-size: large;
+      line-height: 2.00rem;
+    }
+  }
+  
+  .form-group-inline {
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  
+  .btn-sticky {
+    position: relative !important;
+    float: right;
+    right: 0 !important;
+  }
+  
+  .card{
+    position: static !important;
+  }
+  .card-profile{
+    position: static !important;
+    box-shadow: 0 0 1px 0 rgba(2, 3, 3, 0.1);
+    border-radius: 10px;
+    //height: 60vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'banner banner'
+                          'overview overview'
+                          'detail detail';
+    grid-gap: 0;
+   // grid-template-rows: 40% 30% 30%;
+  }
+  
+  
+  
+  
+  .banner-section{
+    grid-area: banner;
+    width: 100%;
+    background: #EFF5F9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+  
+  
+    .btn-back{
+      float: left;
+    }
+    .qr-code{
+      float: right;
+      clear: none;
+      height: 100px;
+    }
+  }
+
+  .main-content{
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  .vehicle-details{
+    grid-area: detail;
+    text-align: left;
+    padding: 20px;
+    h5{
+      font-weight: bold;
+    }
+  }
+  .vehicle-detail-content{
+    float: right;
+    margin-right: 60px;
+    margin-top: 25px;
+    p{
+      text-align: left!important;
+    }
+  }
+  .qr-code-content{
+    float: left;
+  }
+
+.btn-qr {
+  background-color: $primary-yellow;
+  color: $grey;
+  box-shadow: 5px 2px 5px 0 rgba(2, 3, 3, 0.1);
+  border-radius: 5px;
+  width: 120px!important;
+  font-size: 10px;
+  padding-top: -5px;
+  margin-left: 13px;
+}
+
+  
+  
+  .card-header{
+    text-align: left;
+    h4{
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  .alert-dismissible {
+    text-align: left;
+}
+.ion-android-done{
+  font-size: 20px!important;
+}
+.alert-success {
+  color: #155724;
+  background-color: #47f770d3;
+  border-color: #0fef43;
+}
+.padding-top-40{
+  padding-top: 10px!important;
+}
+.btn-sticky-1 {
+    right: 5px;
+    background: #FDC664;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0 0 10px 0 rgb(2 3 3 / 10%);
+}
+.button-two-content{
+    float: right;
+    margin-right: 50px;
+}
+
+.main-profile-img{
+    height: 15%;
+    width: 15%;
+    border-radius: 5%;
+    margin-left: 150px;
+
+}

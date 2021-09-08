@@ -1,0 +1,29 @@
+<div  *ngIf="isLoading" class="flex-layout">
+  <!--  Loader Spinner-->
+  <div class="clq-spinner"></div>
+
+</div>
+
+<div  *ngIf="!isLoading" [ngClass]="homeContainer">
+  <!-- Template Area  -->
+  <!-- Top Navbar -->
+  <app-navbar class="app-navbar" (toggleSidebar)="changeDashboardLayout()"></app-navbar>
+  
+  <!-- Side navbar -->
+  <app-menu class="app-menu" (closeDialog)="closeDialog()"></app-menu>
+  
+  <div class="home-content-pages">
+    <!-- Content -->
+    <div  [ngClass]="content">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- Right side content  -->
+    <app-profile-aside  [ngClass]="rightSideBarMenu"></app-profile-aside>
+  </div>
+</div>
+
+<div class="mobile-version">
+  <p>Mobile Version not configured. Switch to Desktop View</p>
+</div>
+
+

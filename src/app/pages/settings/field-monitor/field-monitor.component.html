@@ -1,0 +1,66 @@
+<div class="page-container-section">
+  <div class="page-heading">
+    <h4>Field Monitor Officers</h4>
+  </div>
+  <section>
+    <div class="row">
+
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="input-group mb-3 float-right">
+              <div class="input-group-prepend">
+                <span class="input-group-text ion-search" id="basic-addon1"></span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search by email / Contact"
+                aria-label="Search"
+                aria-describedby="Search Input">
+            </div>
+          </div>
+          <div class="signup-link-area">
+            <div class="link-area">
+              <!-- <p><span>New Monitor Officer Signup Link: </span>{{signupLink}}</p> -->
+                <button class="btn btn-default btn-sm">
+                  <span class="ion-ios-copy-outline"></span>
+                </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <table class="table table-borderless"
+                   id="notificationTbl"
+                   aria-describedby="Field Monitor Table">
+              <thead>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Contact</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+              </thead>
+              <tbody>
+                 <tr *ngFor="let monitor of fieldMonitors; let i = index;">
+                    <td>{{i + 1}}</td>
+                    <td>{{monitor.name}}</td>
+                    <td>{{monitor.email}}</td>
+                    <td>{{monitor.phonenumber}}</td>
+                    <td>
+                      <span [ngClass]="status">{{monitor.status}}</span>
+                    </td>
+                   <td>
+                     <button class="btn btn-secondary btn-sm"
+                             (click)="options(i)">
+                       More Options
+                     </button>
+                   </td>
+                 </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

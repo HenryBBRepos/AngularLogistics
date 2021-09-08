@@ -1,0 +1,32 @@
+@import "src/color";
+
+
+.form-check {
+  padding: 0 35px 0 35px;
+}
+
+
+.forgot-password {
+  text-align: center;
+  padding: 10px;
+  p {
+    color: $grey;
+    font-weight: lighter;
+  }
+  a {
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.signup-link {
+  text-align: center;
+  p {
+    color: $grey;
+    font-weight: lighter;
+  }
+  a {
+    color: #000;
+    font-weight: bolder;
+  }
+}

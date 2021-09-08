@@ -1,0 +1,58 @@
+.card-deep-blue {
+  background: #1B6CA8;
+  border-radius: 10px;
+
+  .card-body p {
+    width: 50%;
+    text-align: left;
+    color: #fff;
+    font-weight: lighter;
+  }
+
+  .card-body p > span {
+    text-align: right !important;
+    font-weight: bolder;
+  }
+}
+
+.card-header {
+  text-align: left;
+}
+
+.tracking-cell {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  div:first-child {
+    display: flex;
+    justify-content: left;
+    width: 30%;
+
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+    }
+  }
+
+  div:last-child {
+    width: 70%;
+    text-align: left;
+
+    p{
+      font-weight: lighter;
+    }
+    p > span {
+      text-align: right;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  }
+}
+
+.mat-spinner-box {
+  margin: auto;
+  width: 200px;
+  text-align: left;
+}

@@ -1,0 +1,206 @@
+<div class="vehicle-profile-section">
+
+  <div class="header">
+
+    <div class="page-heading">
+
+
+      <ul class="breadcrumb">
+
+        <li class="breadcrumb-item"><a routerLink="/app/v/vehicles">Vehicles</a> </li>
+        <li class="breadcrumb-item"><h4>Update Vehicle</h4></li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+  <section>
+
+    <div class="row">
+
+      <div class="col-lg-12">
+
+        <div class="card card-vehicle-profile">
+
+          <div class="card-header">
+
+            <button class="btn btn-primary btn-save-changes">Save Changes</button>
+
+          </div>
+
+          <div class="card-body " style="height: 100px">
+
+            <div class="vehicle-photo-area">
+
+              <img src="../../../assets/images/placeholder.png" alt="vehiclePhoto"/>
+
+            </div>
+
+            <div class="vehicle-description">
+
+              <h4>Mercedes-Benz ACTROS 1832</h4>
+              <p>Registration Number 90</p>
+
+            </div>
+
+            <qrcode
+              [qrdata]="'Hello'" class="qr-code"
+              [width]="70"  [errorCorrectionLevel]="'M'"
+              [elementType]="'svg'"></qrcode>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-12">
+
+        <div class="card card-information">
+
+          <div class="card-header">
+            <h4>Information</h4>
+          </div>
+
+          <div class="card-body">
+
+              <div class="info-section">
+
+                  <h4>General Info</h4>
+
+                  <div class="info-section-form">
+
+                    <div class="form-group-inline">
+
+                      <label for="model">Model</label>
+
+                      <input type="text" class="form-control-c form-control" id="model">
+
+                    </div>
+
+                    <div class="form-group-inline">
+
+                      <label for="registNo">Registration Number</label>
+
+                      <input type="text" class="form-control-c form-control" id="registNo">
+
+                    </div>
+
+                    <div class="form-group-inline">
+
+                      <label for="carType">Car Type</label>
+
+                      <select class="form-control-c form-control" id="carType">
+                        <option>Truck</option>
+                      </select>
+
+                    </div>
+
+                    <div class="form-group-inline">
+
+                      <label for="weightNo">Number of Weight</label>
+
+                      <input type="number" class="form-control-c form-control" id="weightNo">
+
+                    </div>
+
+                    <div class="form-group-inline">
+
+                      <label for="origin">Origin</label>
+
+                      <input type="number" class="form-control-c form-control" id="origin">
+
+                    </div>
+
+                  </div>
+
+              </div>
+
+
+              <div class="info-section padding-top-40">
+
+                <h4>Insurance</h4>
+
+                <div class="info-section-form">
+
+                  <div class="form-group-inline">
+
+                    <label for="insuranceCompany">Insurance Company</label>
+                    <input type="text" name="insuranceCompany" class="form-control-c" id="insuranceCompany">
+
+                  </div>
+
+                  <div class="form-group-inline">
+
+                    <label for="policyNumber">Policy Number</label>
+                    <input type="text" name="policyNumber" class="form-control-c" id="policyNumber">
+
+                  </div>
+
+                  <div class="form-group-inline">
+
+                    <label for="issueDate">Issue Date</label>
+                    <input type="text" name="issueDate" class="form-control-c" id="issueDate">
+
+                  </div>
+
+                  <div class="form-group-inline">
+
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="text" name="expiryDate" class="form-control-c" id="expiryDate">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="info-section padding-top-40">
+
+                <h4>Vehicle Driver</h4>
+
+                <div class="info-section-form">
+
+                  <div class="form-group-inline">
+
+                    <label for="fullName">Full Name</label>
+                    <input type="text" name="fullName" id="fullName" class="form-control-c">
+
+                  </div>
+
+                  <div class="form-group-inline">
+
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" name="fullName" id="phoneNumber" class="form-control-c">
+
+                  </div>
+
+                  <div class="form-group-inline">
+
+                    <label for="phoneNumber">Email</label>
+                    <input type="text" name="email" id="email" class="form-control-c">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+</div>

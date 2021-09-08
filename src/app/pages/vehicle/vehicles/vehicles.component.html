@@ -1,0 +1,49 @@
+<div class="vehicle-container">
+  <div class="header">
+    <div class="page-heading">
+      <h4>Vehicles</h4>
+    </div>
+    <div class="page-filter">
+      <p><span class="ion-android-options"></span> Sort By</p>
+      <select class="form-control">
+        <option>Relevance</option>
+      </select>
+    </div>
+  </div>
+
+
+  <section class="vehicle-section">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+               <div class="card card-profile" (tap)="options()">
+                  <div class="vehicle-picture-area">
+                    <div class="qr">
+                      <qrcode
+                        [qrdata]="'Hello world'"
+                        class="qr-code"
+                        [width]="70"
+                        [errorCorrectionLevel]="'M'"
+                        [elementType]="'svg'">
+
+                      </qrcode>
+                    </div>
+                  </div>
+                 <div class="vehicle-description">
+                   <h3>DAF CF 65.220</h3>
+                   <p>Registration Number: AA - 123 -</p>
+                   <button class="btn btn-cliqhaul-primary  btn-more" (click)="options()">More..</button>
+                 </div>
+               </div>
+            </div>
+        </div>
+      </div>
+
+      
+  </section>
+
+  <a class="btn btn-default btn-sticky" routerLink="/app/v/vehicles/register">
+    <span class="ion-android-car"></span> Register Vehicle
+  </a>
+
+</div>

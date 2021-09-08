@@ -1,0 +1,15 @@
+.profile-name {
+  width: 100%;
+  text-align: center;
+  h3 {
+    line-height: 3.900rem;
+    font-size: .999rem;
+  }
+}
+.profile-details > table {
+  tbody {
+    tr > td:last-child {
+      text-align: left;
+    }
+  }
+}

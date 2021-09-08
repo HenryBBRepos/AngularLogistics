@@ -1,0 +1,43 @@
+.user-profile-photo{
+    display: flex;
+    width: 100%;
+    justify-content: center !important;
+    img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+  }
+  
+  .online {
+    font-weight: lighter;
+    font-size: .800rem;
+    span {
+      color: #00FF88;
+    }
+  }
+  
+  .user-profile-detail{
+    width: 100%;
+    text-align: center;
+  }
+  .username{
+    font-size: 1rem;
+    color: #142850;
+  }
+  .user_role{
+    color: #8e8e8e;
+    line-height: .1rem;
+    display: block;
+    font-size: .900rem;
+  }
+  
+  
+  @media screen and (min-width: 1600px){
+  
+  }
+  
+  @media only screen and (max-width: 600px){
+  
+  }
+  

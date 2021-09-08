@@ -1,0 +1,73 @@
+@import "src/color";
+.page-container-section {
+  height: 100vh;
+}
+.card{
+  border: none;
+  box-shadow: 5px 6px 5px 0 rgba(2, 3, 3, 0.1);
+  border-radius: 5px;
+}
+.card-body {
+  text-align: left;
+  h3 {
+    font-size: 1.555rem;
+  }
+  p {
+    color: $grey;
+    font-size: .955rem;
+    font-weight: lighter;
+  }
+}
+.card-footer {
+  border: none;
+  background: transparent;
+}
+.btn-secondary {
+  box-shadow: 5px 2px 5px 0 rgba(2, 3, 3, 0.1);
+  border-radius: 5px;
+  //padding: 10px;
+}
+.btn-scan {
+  background: $primary-yellow;
+  color: #000;
+  box-shadow: 5px 2px 5px 0 rgba(2, 3, 3, 0.1);
+  border-radius: 5px;
+  //padding: 10px;
+}
+
+
+#historyCard {
+  .card-header {
+    background: transparent;
+    border: none;
+    h4 {
+      padding: 10px;
+      font-size: 1.266rem;
+    }
+  }
+  .card-body {
+    // height: 40.3vh;
+  }
+}
+
+#registationCard {
+
+  .btn-secondary {
+    box-shadow: 5px 2px 5px 0 rgba(2, 3, 3, 0.1);
+    border-radius: 5px;
+    font-size: .988rem;
+  }
+
+  .btn-scan {
+    background: $primary-yellow;
+    color: #000;
+    box-shadow: 5px 2px 5px 0 rgba(2, 3, 3, 0.1);
+    border-radius: 5px;
+  }
+}
+
+.button-pad {
+  display: flex;
+  justify-content: center;
+  gap: .900rem;
+}

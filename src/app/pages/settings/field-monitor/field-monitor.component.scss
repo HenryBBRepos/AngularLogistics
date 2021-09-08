@@ -1,0 +1,89 @@
+@import "src/color";
+
+#notificationTbl {
+  thead {
+    background: $primary-yellow;
+    color: #000;
+  }
+  th:first-child {
+    width: 5%;
+  }
+  th {
+    font-size: .999rem;
+    text-align: start;
+  }
+
+  tbody > tr {
+    border: 1px solid transparent;
+    border-bottom-color: #E1E1E1;
+  }
+
+  tbody > tr > td{
+    text-align: start;
+    h6 {
+      text-transform: uppercase;
+      font-weight: lighter;
+      font-size: small;
+    }
+    p{
+      text-wrap: normal;
+    }
+  }
+}
+.mb-3 {
+  width: 40%;
+}
+.card-header {
+  background: transparent;
+  border: none;
+}
+.isActive {
+  color: forestgreen;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.inActive {
+  color: $grey;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.btn-new {
+  padding: 5px;
+}
+.signup-link-area {
+  height: 65px;
+  background: #eff5f9;
+  padding: 10px;
+}
+.link-area {
+  background: #a8d2ef;
+  width: 100%;
+  height: 100%;
+  font-weight: lighter;
+  font-size: .999rem;
+  text-align: left;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 95% 5%;
+  p {
+    font-style: italic;
+    color: #2e4b4e;
+
+    span {
+      font-style: normal;
+      font-weight: normal;
+    }
+  }
+  button {
+    border-radius: 56px;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    span {
+      color: #000;
+      transform: scale(5);
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div  *ngIf="isLoading" class="flex-layout">
+    <!--  Loader Spinner-->
+    <div class="clq-spinner"></div>
+  
+</div>
+
+
+<div  *ngIf="!isLoading" [ngClass]="homeContainer">
+  <!-- Template Area  -->
+  <!-- Top Navbar -->
+  <app-fmo-navbar class="app-navbar" (toggleSidebar)="changeDashboardLayout()"></app-fmo-navbar>
+  
+  <!-- Side navbar -->
+  <app-fmo-menu class="app-menu" (closeDialog)="closeDialog()"></app-fmo-menu>
+  
+  <div class="home-content-pages">
+    <!-- Content -->
+    <div  [ngClass]="content">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- Right side content  -->
+    <app-fmo-profile-aside  [ngClass]="rightSideBarMenu"></app-fmo-profile-aside>
+  </div>
+</div>

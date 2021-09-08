@@ -1,0 +1,52 @@
+<div class="page-container-section">
+  <div class="page-heading">
+    <h4>Tracking</h4>
+  </div>
+
+  <section>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-12">
+
+          <div class="card">
+
+            <div class="card-body">
+
+              <agm-map
+                [latitude]="latitude"
+                [longitude]="longitude"
+                [zoom]="zoom"
+                [disableDefaultUI]="false"
+                (mapClick)="mapClicked($event)">
+
+                <agm-marker *ngFor="let marker of markers; let i = index"
+                            [latitude]="marker.latitude"
+                            [longitude]="marker.longitude"
+                            [label]="marker.label"
+                            [markerDraggable]="marker.draggable"
+                            (markerClick)="clickedMarker(marker.label, i)"
+                            [iconUrl]="" >
+                </agm-marker>
+
+              </agm-map>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-12 padding-top-40">
+
+          <app-trip-tracking-detail></app-trip-tracking-detail>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+</div>

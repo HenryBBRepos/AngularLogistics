@@ -1,0 +1,147 @@
+
+.flex-layout{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   //zoom: 90%
+ }
+ 
+ .hide{
+   display: none;
+ }
+ 
+ /**
+   Right Side Bar Closed
+  */
+ .home-container-with-sidebar{
+   display: grid;
+   width: 100%;
+   overflow-x: hidden;
+   grid-template-areas:
+     'header header header header header header'
+     'menu main main main main right'
+     'menu main main main main right';
+   grid-gap: 1px;
+   padding: 0;
+   //height: 100vh;
+   grid-template-rows: 90px;
+   grid-template-columns: 20%;
+   zoom: 85%;
+ }
+ 
+ 
+ 
+ .home-container-with-sidebar > div {
+   background-color: rgba(255, 255, 255, 0.8);
+   text-align: center;
+   padding: 20px 0;
+   font-size: 30px;
+ }
+ 
+ 
+ /** End of Right Sidebar**/
+ .home-container{
+    display: grid;
+    width: 100%;
+    overflow-x: hidden;
+    grid-template-areas:
+       'header header header header header header'
+       'menu main main main main main'
+       'menu main main main main main';
+    grid-gap: 0;
+    padding: 0;
+    //height: 100vh;
+   grid-template-rows: 50px;
+   grid-template-columns: 20%;
+ }
+ 
+ 
+ 
+ .home-container > div {
+   background-color: rgba(255, 255, 255, 0.8);
+   text-align: center;
+   padding: 20px 0;
+   font-size: 30px;
+ }
+ 
+ /**
+   Sections
+  */
+ .app-navbar {
+   grid-area: header;
+ }
+ 
+ .app-menu {
+   grid-area: menu;
+ }
+ .home-content-pages {
+   grid-area: main;
+   //background: #EFEFEF !important;
+   box-sizing: content-box;
+   display: flex;
+   padding-top: 0 !important;
+ }
+ 
+ .content{
+   width: 80%;
+   transition: 0.5s;
+ }
+ 
+ .right-side-bar-menu{
+   width: 20%;
+   opacity: 1;
+   transition: 0.5s;
+ }
+ 
+ .content-closed{
+   width: 100%;
+   transition: 0.5s;
+ }
+ 
+ .right-side-bar-menu-closed{
+   width: 0;
+   opacity: 0;
+   transition: 0.2s;
+ }
+ 
+ @keyframes slideInLeft {
+   0%{
+     grid-template-columns: 20%;
+   }
+ 
+   100%{
+     grid-template-columns: 20% 80% 0;
+   }
+ }
+ .mobile-version { display: none; }
+ /**
+ End of Sections
+  */
+ @media only screen and (max-width: 900px){
+   .home-container {
+     display: none;
+   }
+   .home-container-with-sidebar{
+     display: none;
+   }
+   .mobile-version {
+     height: 100vh;
+     background: #000;
+     display: flex;
+     align-content: center;
+     justify-content: center;
+     justify-items: center;
+     align-items: center;
+     p {
+       color: #fff;
+       font-weight: lighter;
+       text-align: center;
+       text-wrap: normal;
+     }
+   }
+ }
+ 
+ 
+ 
+ 

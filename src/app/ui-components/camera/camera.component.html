@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>Camera</h2>
+<mat-dialog-content>
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="canvas" class="d-none"></canvas>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button 
+  type="button" 
+  class="btn btn-default btn-snap"
+  (click)="capture()"
+  mat-dialog-close>
+    <span class="ion-android-camera">
+    </span>
+  </button>
+
+  <button 
+    type="button" 
+    class="btn btn-danger btn-snap btn-close-camera"
+    (click)="closeCamera()"
+    mat-dialog-close>
+    <span class="ion-close"></span>
+  </button>
+</mat-dialog-actions>

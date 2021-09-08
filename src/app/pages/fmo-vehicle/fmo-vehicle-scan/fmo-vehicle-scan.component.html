@@ -1,0 +1,158 @@
+<div class="page-container-section">
+    <div class="page-heading">
+      <h4>Scan</h4>
+    </div>
+  
+    <div class="row padding-top-20">
+      <div class="col-lg-12">
+        <div class="card card-profile">
+        
+          <div class="profile-details">
+            <h5>Scan 1/2 - Vehicle Scan</h5><hr>
+            <div class="details">
+              <table class="table table-borderless" aria-describedby="profile-form">
+                <tbody>
+                <tr>
+                  <td>
+                    <div class="container main-content">
+                        <div class="row">
+                        
+                          <div class="col-6">
+                            <div class="qr-code-content">
+                              <qrcode [qrdata]="'Vehicle QRcode'" class="qr-code"
+                              [width]="180"
+                              [errorCorrectionLevel]="'M'"
+                              [elementType]="'svg'">
+                            </qrcode>
+                        
+                            </div>
+                          
+                          </div>
+                        </div>
+                      </div>
+                  </td>
+                  <td>
+                   <div class="progress-content">
+                    <h4>Progress</h4>
+                    <button class="btn btn-default btn-block btn-qr" routerLink="">
+                        Completed
+                    </button>
+                   </div>
+                  </td>
+
+                </tr>
+              
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row padding-top-20">
+        <div class="col-lg-12">
+          <div class="card card-profile">
+          
+            <div class="profile-details">
+              <h5>Vehicle Found</h5><hr>
+              <div class="details">
+                <table class="table table-borderless" aria-describedby="profile-form">
+                  <tbody>
+                  <tr>
+                    <td>General Information</td>
+                    <td>
+                      <div class="container main-content">
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="vehicle-detail-content">
+                                <p>Model: <b> DFCD ECE 65.424</b></p>
+                                <p>Registration Number: <b>AA-123-BB</b></p>
+                                <p>Car Type: <b>Truck</b></p>
+                                <p>Number of Weight: <b>3,5 T</b></p>
+                              </div>
+                            </div>
+                        
+                          </div><hr>
+                        </div>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td>Insurance</td>
+                    <td>
+                      <div class="container main-content">
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="vehicle-detail-content">
+                                <p>Insurance Company: <b>Prudential Insurance Ltd</b></p>
+                                <p>Insurance Number: <b>PI 123 4343</b></p>
+                                <p>Issue Date: <b>07/20</b> &nbsp;&nbsp; Issue Expire <b>07/21</b></p>
+                              </div>
+                            </div>
+                        
+                          </div><hr>
+                        </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>Vehicle Owner</td>
+                    <td>
+                      <div class="container main-content">
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="vehicle-detail-content">
+                                <p>Full Name: <b>Mark Forson</b></p>
+                                <p>Phone Number: <b>+233 545 545 5454</b></p>
+                                <p>Email: <b>mark.forson@gmailcom</b></p>
+                              </div>
+                            </div>
+                        
+                          </div>
+                        </div>
+                    </td>
+                  </tr>
+                
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-12 padding-top-40">
+        <div class="card">
+            <div class="card-header">
+              <h4>Vehicle Owner</h4><hr>
+            </div>
+            <div class="card-body">
+              <div class="form-group-inline">
+
+                <label for="destination">Origin</label>
+                <input type="text" name="destination" id="origin" class="form-control-c">
+
+              </div>
+
+              <div class="form-group-inline">
+
+                <label for="destination">Destination</label>
+                <input type="text" name="destination" id="destination" class="form-control-c">
+
+              </div>
+
+              
+            </div>
+        </div>
+      </div>
+
+     <div class="next-content">
+        <button class="btn btn-default btn-block btn-next" routerLink="">
+            Next <span class="ion-chevron-right"></span>
+        </button>
+     </div>
+<br><br>
+  </div>
+  

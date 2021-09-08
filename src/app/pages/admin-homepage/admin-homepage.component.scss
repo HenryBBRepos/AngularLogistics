@@ -1,0 +1,129 @@
+@import "src/color";
+.page-container-section {
+  height: 100vh;
+}
+.card{
+  border: none;
+  box-shadow: 5px 6px 5px 0 rgba(2, 3, 3, 0.1);
+  border-radius: 15px;
+}
+.card-body {
+  text-align: left;
+  h3 {
+    font-size: 1.755rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: $white;
+
+
+  }
+  p {
+    color: $grey;
+    font-size: .900rem;
+    font-weight: lighter;
+    font-weight: 400;
+    
+    
+  }
+  h2{
+    font-size: 2.555rem;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: $deep-blue;
+
+  }
+  span{
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+    color: $deep-blue;
+    line-height: 0px;
+
+
+  }
+  h4{
+    font-size: 1.755rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: $deep-sea-blue;
+  }
+  h5{
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+    color: $deep-blue;
+    line-height: 0px;
+  }
+  a{
+    font-size: 16px;
+    text-decoration: underline;
+    color: $deep-sea-blue;
+    line-height: 0px;
+  }
+}
+.card-footer {
+  border: none;
+  background: transparent;
+}
+.btn-secondary {
+  box-shadow: 5px 2px 5px 0 rgba(2, 3, 3, 0.1);
+  border-radius: 5px;
+}
+.btn-view-all {
+  background-color: $white;
+  color: $deep-blue;
+  box-shadow: 5px 2px 5px 0 rgba(2, 3, 3, 0.1);
+  border-radius: 5px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: -10px;
+
+  
+}
+.vehicle-main{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.driver-main{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.btn-view-report {
+  background-color: $primary-yellow;
+  color: $deep-blue;
+  box-shadow: 5px 2px 5px 0 rgba(2, 3, 3, 0.1);
+  border-radius: 5px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: -10px;
+}
+.sap-integration-main{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.drivers-bg{
+  background-color: $primary-yellow;
+}
+.report-bg{
+  background-color: $white;
+}
+.sap-integration-bg{
+  background-color: $white;
+}
+.vehicle-bg{
+  background-color: $pink;
+}
+.ion-chevron-right:before{
+  color: $deep-sea-blue;
+  font-size: 12px;
+  padding-left: 5px;
+}
+.report-main{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sap-integration-img{
+  margin-top: 30px;
+}
+
+agm-map {
+  height: 300px;
+}

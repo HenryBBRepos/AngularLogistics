@@ -1,0 +1,38 @@
+@import "src/color";
+
+#modal-content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    color: white;
+}
+
+#modal-title {
+    font-size: 22px;
+}
+#modal-body{
+    color: #000000!important;
+}
+.ion-ios-checkmark-outline{
+    color: rgb(0 255 136);
+    font-size: 40px;
+    font-weight: 800;
+}
+p{
+    padding-top: 10px;
+    color: #5a5a5a!important;
+}
+.btn-complete {
+    background-color: $primary-yellow;
+    color: #ffffff;
+    box-shadow: 5px 2px 5px 0 rgba(2, 3, 3, 0.1);
+    border-radius: 5px;
+    width: 100px!important;
+    font-size: 13px;
+    padding-top: -2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-left: 37px;
+  }
+

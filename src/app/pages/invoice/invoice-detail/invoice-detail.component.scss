@@ -1,0 +1,68 @@
+@import "src/color";
+.page-container-section {
+  height: 100vh;
+}
+#invoiceCard {
+  border-radius: 10px;
+}
+#invoiceCard p{
+  font-size: .799rem !important;
+}
+#invoiceCard > .card-header {
+  border: none;
+}
+.client-box{
+  text-align: left;
+  p {
+    line-height: .59em;
+  }
+  p:first-child {
+    font-weight: bold;
+  }
+  .silent-text {
+    color: #6C6C6C;
+  }
+}
+
+.invoice-details {
+  text-align: right;
+  p {
+    line-height: .59em;
+  }
+  p:first-child {
+    font-weight: bold;
+  }
+  .silent-text {
+    color: #6C6C6C;
+  }
+}
+
+table {
+  font-size: .999rem;
+  tr:last-child > td:first-child {
+    text-align: left;
+  }
+}
+
+.shippingCell {
+  text-align: left;
+  h6 {
+    font-weight: bold;
+    line-height: 2.343rem;
+
+  }
+   p{
+     line-height: .100rem;
+     color: #6C6C6C;
+     font-weight: 200;
+   }
+}
+.list-group {
+  text-align: left;
+  color: #FFFFFF;
+  background: $secondary !important;
+
+  .list-group-item {
+    background: transparent;
+  }
+}

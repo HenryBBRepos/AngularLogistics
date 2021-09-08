@@ -1,0 +1,27 @@
+.list-group{
+  width: 100%;
+  background: transparent;
+}
+.list-group-item {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  border: none;
+  background: #fff
+}
+
+.list-group-item > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+}
+
+.profile-info {
+  padding: 10px;
+}
+.mat-spinner-box {
+  margin: auto;
+  width: 100%;
+}
+.mat-spinner {
+  margin: auto;
+}

@@ -1,0 +1,85 @@
+
+@import "src/color";
+
+.welcome-page .card .card-header h4 span{
+    float: right;
+    font-size: 9px!important;
+
+}
+.welcome-page{
+    margin-top: 10px;
+}
+
+.signup-container{
+  display: flex;
+  justify-content: center;
+
+  .card-default{
+    margin: 20px;
+    border-radius: 3px;
+    width: 70%;
+  }
+
+  p{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: #8e8e8e;
+  }
+  h4{
+    //font-family: Circular-Bold, serif;
+  }
+}
+
+.card-body{
+  padding-top: 3px;
+}
+
+h6{
+  text-align: center;
+  padding: 25px;
+  font-weight: bolder;
+  //font-family: Circular-Bold, serif;
+}
+
+.form-check-label{
+  color: #8e8e8e;
+  //font-family: Circular-Medium, serif;
+}
+
+.btn-cliqhaul-primary{
+  letter-spacing: 0.16rem;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .card-default{
+    padding: 3px;
+  }
+  .signup-container{
+    display: flex;
+    justify-content: center;
+
+    .card-default{
+      margin: 10px;
+      border-radius: 10px;
+      width: 100%;
+    }
+
+  }
+}
+
+.login-link {
+  text-align: center;
+  p {
+    color: $grey;
+    font-weight: lighter;
+    margin-top: 15px;
+  }
+  a {
+    color: #000;
+    font-weight: bolder;
+  }
+}

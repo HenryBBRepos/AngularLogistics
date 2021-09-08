@@ -1,0 +1,285 @@
+@import "src/color";
+
+.card{
+    position: static !important;
+  }
+  .card-profile{
+    position: static !important;
+    box-shadow: 0 0 1px 0 rgba(2, 3, 3, 0.1);
+    border-radius: 10px;
+    //height: 60vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'banner banner'
+                          'overview overview'
+                          'detail detail';
+    grid-gap: 0;
+    // grid-template-rows: 40% 30% 30%;
+  }
+  
+  
+  
+  
+  .banner-section{
+    grid-area: banner;
+    width: 100%;
+    background: #EFF5F9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+  
+  
+    .btn-back{
+      float: left;
+    }
+    .qr-code{
+      float: right;
+      clear: none;
+      height: 100px;
+    }
+  }
+  
+  .profile-overview{
+    grid-area: overview;
+    display: grid;
+    grid-template-columns: 20% 80%;
+  
+    img{
+      background: #fff;
+      border-radius: 10px;
+      width: 150px;
+      height: 150px;
+      position: relative;
+      top: -50px;
+      left: 0;
+      border: 5px solid #fff;
+    }
+  }
+  
+  .profile-details{
+    grid-area: detail;
+    text-align: left;
+    padding: 20px;
+    h5{
+      font-weight: bold;
+    }
+  }
+  
+  .driver-profile{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    .title{
+      width: 100%;
+      text-align: left;
+      padding: 15px;
+      h4{
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  
+    div:last-child{
+      padding-top: 10px;
+      padding-right: 10px;
+    }
+  }
+  
+  .btn-yellow{
+    background: #FDC664;
+    color: #fff;
+    font-size: .900rem;
+  }
+  
+  .rating{
+    line-height: .500rem;
+    padding-top: 0 !important;
+  
+    span{
+      font-weight: 500;
+  
+    }
+  }
+  
+  .sr-only + span {
+    color: #FDC664 !important;
+  }
+  
+  tbody{
+    tr:first-child{
+      td:last-child{
+        border: 1px solid transparent;
+      }
+    }
+  }
+  
+  tr{
+    td:first-child{
+      width: 30%
+    }
+  }
+  
+  
+  .transaction-card{
+    .card-body{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+  
+  .card-header{
+    text-align: left;
+    h4{
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  
+  
+  .transactions{
+  
+    thead{
+      font-size: .900rem;
+      background: #FDC664;
+      color: #000;
+    }
+  }
+  
+  .license-section {
+    display: grid;
+    grid-template-columns: 50% 10% 40%;
+  }
+  
+  .date-input-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  
+    div {
+      padding: 3px;
+    }
+  }
+  
+  .scan-form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .btn-scanner {
+    border: 1px solid #E1E1E1;
+    height: 50px;
+    color: #606060;
+  }
+  
+  .divider {
+    text-align: center;
+    div {
+      margin: auto;
+      background: #E1E1E1;
+      height: 50%;
+      width: 1px;
+    }
+  }
+  .btn-qr {
+    background-color: rgb(0 255 136);
+    color: #000000;
+    box-shadow: 5px 2px 5px 0 rgba(2, 3, 3, 0.1);
+    border-radius: 5px;
+    width: 300px!important;
+    font-size: 13px;
+    padding-top: -2px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .progress-content{
+    margin-top: 100px;
+  }
+  
+  
+  section {
+    padding: 0 23px 0 23px;
+  }
+  
+  .card > .card-header {
+    text-align: left;
+    background: transparent;
+    border: none;
+    h4 {
+      font-size: 0.9rem;
+      line-height: 2.00rem;
+    }
+  }
+  
+  .form-group-inline {
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  #carType{
+    width: 480px!important;
+  }
+  
+  .btn-sticky {
+    position: relative !important;
+    float: right;
+    right: 0 !important;
+  }
+  
+  #carType {
+    width: 510px;
+  }
+  
+  .driver-photo-placeholder {
+    display: flex;
+    justify-content: center;
+    img {
+      height: 200px;
+      width: 200px;
+      border: 1px #E1E1E1 solid;
+      border-radius: 10px;
+    }
+  }
+  
+  .upload-btn {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: .799rem;
+  }
+  
+  .upload-btn:hover {
+    color: #fff;
+  }
+  
+  .input-group-sm>.form-control{
+    background-color: #F2F2F2;
+    border: 1px solid transparent;
+    height: calc(1.5em + .75rem + 9px);
+    border-radius: 5px;
+    
+  }
+  .form-group-inline label{
+      margin-left: 40px;
+  }
+  .form-group-inline{
+    justify-content: left;
+  }
+
+  .btn-next {
+    background-color: $primary-yellow;
+    color: #000000;
+    box-shadow: 5px 2px 5px 0 rgba(2, 3, 3, 0.1);
+    border-radius: 5px;
+    width: 100px!important;
+    font-size: 13px;
+    padding-top: -2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .next-content{
+      float: right;
+  }
+  .ion-chevron-right{
+      font-size: 12px;
+  }

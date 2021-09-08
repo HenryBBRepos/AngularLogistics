@@ -1,0 +1,30 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { EditProfileComponent } from './edit-profile.component';
+import {ChartsModule} from 'ng2-charts';
+import {QRCodeModule} from 'angularx-qrcode';
+
+fdescribe('EditProfileComponent', () => {
+  let component: EditProfileComponent;
+  let fixture: ComponentFixture<EditProfileComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ EditProfileComponent ],
+      imports: [
+        QRCodeModule,
+      ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(EditProfileComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

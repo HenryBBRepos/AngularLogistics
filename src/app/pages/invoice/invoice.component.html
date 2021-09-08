@@ -1,0 +1,52 @@
+<div class="page-container-section">
+  <div class="page-heading">
+    <h4>Invoices</h4>
+  </div>
+
+  <section>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text ion-search" id="basic-addon1"></span>
+          </div>
+          <input
+               type="text"
+               class="form-control"
+               placeholder="Search invoice by date or owner"
+               aria-label="Search"
+               aria-describedby="Search Input">
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <table class="table table-bordered" aria-describedby="Invoice Table">
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Ref</th>
+              <th scope="col">Owner Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              *ngFor="let invoice of invoices">
+              <td>{{invoice.date}}</td>
+              <td>{{invoice.ref}}</td>
+              <td>{{invoice.ownerName}}</td>
+              <td>{{invoice.price}}</td>
+              <td>
+                <button class="btn btn-secondary" (click)="preview(invoice)">
+                  Preview
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <p class="page-details">Page 1 of 1</p>
+</div>

@@ -1,0 +1,92 @@
+<div class="page-container">
+  <div class="header">
+    <div class="page-heading">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/app/d/drivers">Drivers</a> </li>
+        <li class="breadcrumb-item">John Doe</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row padding-top-20">
+    <div class="col-lg-12">
+        <div class="card card-profile">
+            <div class="banner-section">
+              <qrcode [qrdata]="'Hello world'" class="qr-code"
+                      [width]="70"
+                      [errorCorrectionLevel]="'M'"
+                      [elementType]="'svg'"></qrcode>
+            </div>
+            <div class="profile-overview">
+              <div class="profile-box">
+                <img src="../../../../assets/images/avatar_2.png" alt="Driver Profile Pic" class="image-placeholder">
+              </div>
+              <div class="driver-profile">
+                <div class="title">
+                  <h4>Lorenzo Gregory</h4>
+                  <div class="rating">
+                    <ngb-rating rate="3" max="5" readonly="true"></ngb-rating>
+                    <span>&nbsp;4.0</span>
+                  </div>
+                </div>
+                <div class="button-edit">
+                  <button class="btn btn-default btn-block btn-yellow"><span class="ion-edit"></span>&nbsp;Edit</button>
+                </div>
+              </div>
+            </div>
+            <div class="profile-details">
+              <h5>About</h5><hr>
+              <div class="details">
+                <table class="table table-borderless">
+
+                   <tbody>
+                      <tr>
+                         <td>General Info</td>
+                         <td>
+                           <p>Full Name: <b>Alex Johnson</b></p>
+                           <p>Phone Number: <b>+261 32 399 92</b></p>
+                           <p>Address: <b>79 Sunset Rd Unit 1001, Texas, US</b></p>
+                         </td>
+                      </tr>
+                      <tr>
+                        <td>Driver License</td>
+                        <td>
+                          <p>Number: <b>89893829</b></p>
+                          <p><span>Issue Date: <b>07/29/2017</b></span>&nbsp;
+                            <span>Expiry Date: <b>07/15/2022</b></span></p>
+                        </td>
+                      </tr>
+                   </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12 padding-top-20">
+        <div class="card transaction-card">
+          <div class="card-header">
+            <h4>Recent Transaction</h4>
+          </div>
+          <div class="card-body">
+              <table class="table table-border transactions">
+                <thead>
+                  <tr>
+                    <th>Starting Point</th>
+                    <th>Arrival</th>
+                    <th>Date</th>
+                    <th>Customer</th>
+                    <th>Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

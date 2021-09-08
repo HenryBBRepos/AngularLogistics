@@ -1,0 +1,67 @@
+<div class="welcome-page">
+    <div class="card">
+      <div class="card-header">
+        <h4>Sign Up <span>Step 2: Account Details</span></h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+            <div class="form-group col-12">
+                <input type="text"
+                       class="form-control"
+                       autocomplete="off"
+                       placeholder="Company Name">
+            </div>
+            <div class="form-group col-12">
+                <input type="tel"
+                       class="form-control"
+                       autocomplete="off"
+                       placeholder="Phone Number">
+            </div>
+            <div class="form-group col-12">
+            <input type="text"
+                   class="form-control"
+                   autocomplete="off"
+                   placeholder="Address">
+          </div>
+          <div class="form-group col-6">
+            <input type="text"
+                   class="form-control"
+                   autocomplete="on"
+                   placeholder="City"/>
+          </div>
+          <div class="form-group col-6">
+            <input type="text"
+                   class="form-control"
+                   autocomplete="off"
+                   placeholder="State">
+                   
+          </div>
+  
+          <div class="form-group col-12">
+            <input type="text"
+                   class="form-control"
+                   autocomplete="off"
+                   placeholder="Postal Code">
+          </div>
+  
+          <div class="form-group col-12">
+            <input type="text"
+                   class="form-control"
+                   autocomplete="off"
+                   placeholder="Country">
+          </div>
+  
+          <div class="col-12">
+            <button class="btn btn-default btn-block btn-login" (click)="signupsteptwo()">
+              Create Account
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="login-link">
+    <p>Already Have an Account? <a routerLink="/welcome/login">Login</a></p>
+  </div>
+  

@@ -1,0 +1,106 @@
+@import "src/color";
+
+.signup-container{
+  display: flex;
+  justify-content: center;
+
+  .card-default{
+    margin: 20px;
+    border-radius: 3px;
+    width: 70%;
+  }
+
+  p{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: #8e8e8e;
+  }
+  h4{
+    //font-family: Circular-Bold, serif;
+  }
+}
+
+.welcome-page .card .card-header h4 span{
+    float: right;
+    font-size: 9px!important;
+
+}
+.card-body{
+  padding-top: 0px;
+}
+
+h6{
+  text-align: center;
+  padding: 25px;
+  font-weight: bolder;
+  //font-family: Circular-Bold, serif;
+}
+
+.form-check-label{
+  color: #8e8e8e;
+  //font-family: Circular-Medium, serif;
+}
+
+.btn-cliqhaul-primary{
+  letter-spacing: 0.16rem;
+}
+
+.field-page .card {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 30px;
+}
+label {
+    padding-left: 10px;
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+a {
+    color: #0b4988;
+    text-decoration: none;
+    background-color: transparent;
+}
+.welcome-page .card {
+    width: 80%;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    border-radius: 30px;
+}
+.welcome-page .card .btn-login {
+    background: #0b4988;
+    color: #fff;
+    padding: 15px;
+    margin-top: 8px;
+}
+@media only screen and (max-width: 600px) {
+  .card-default{
+    padding: 3px;
+  }
+  .signup-container{
+    display: flex;
+    justify-content: center;
+
+    .card-default{
+      margin: 10px;
+      border-radius: 10px;
+      width: 100%;
+    }
+
+  }
+}
+
+.login-link {
+  text-align: center;
+  p {
+    color: $grey;
+    font-weight: lighter;
+  }
+  a {
+    color: #000;
+    font-weight: bolder;
+  }
+}

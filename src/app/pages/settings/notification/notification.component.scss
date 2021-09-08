@@ -1,0 +1,41 @@
+@import "src/color";
+#notificationTbl {
+  thead {
+    background: $primary-yellow;
+    color: #000;
+  }
+  th:first-child {
+    width: 5%;
+  }
+  th {
+    font-size: .999rem;
+    text-align: start;
+  }
+
+  tbody > tr {
+    border: 1px solid transparent;
+    border-bottom-color: #E1E1E1;
+  }
+
+  tbody > tr > td{
+    text-align: start;
+    h6 {
+      text-transform: uppercase;
+      font-weight: lighter;
+      font-size: small;
+    }
+    p{
+      text-wrap: normal;
+    }
+  }
+}
+
+.timeago {
+  font-size: .800rem;
+  text-align: right;
+}
+
+.card-header {
+  background: transparent;
+  border: none;
+}

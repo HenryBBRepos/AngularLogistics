@@ -1,0 +1,5 @@
+<mat-nav-list>
+  <a *ngFor="let menu of options"  mat-list-item (click)="performAction(menu.onclick)">
+    <span mat-line>{{menu.name}}</span>
+  </a>
+</mat-nav-list>

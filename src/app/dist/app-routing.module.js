@@ -1,0 +1,128 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+exports.__esModule = true;
+exports.AppRoutingModule = void 0;
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var signup_component_1 = require("./pages/signup/signup.component");
+var account_component_1 = require("./pages/account/account.component");
+var login_component_1 = require("./pages/login/login.component");
+var home_component_1 = require("./pages/home/home.component");
+/var homepage_component_1 = require("./pages/homepage/homepage.component");
+var forgot_password_component_1 = require("./pages/forgot-password/forgot-password.component");
+var scan_module_1 = require("./pages/scan/scan.module");
+var routes = [
+    {
+        path: '',
+        redirectTo: '/welcome/login',
+        pathMatch: 'full'
+    },
+    {
+        path: 'welcome',
+        component: account_component_1.AccountComponent,
+        children: [
+            {
+                path: '',
+                redirectTo: '/welcome/login',
+                pathMatch: 'full'
+            },
+            {
+                path: 'login',
+                component: login_component_1.LoginComponent
+            },
+            {
+                path: 'signup',
+                component: signup_component_1.SignupComponent
+            },
+            // {
+            //     path: ':companyCode/signup',
+            //     component: signup_component_1.SignupComponent
+            // },
+            {
+                path: 'reset-password',
+                component: forgot_password_component_1.ForgotPasswordComponent
+            }
+        ]
+    },
+    {
+        path: 'app',
+        component: home_component_1.HomeComponent,
+        children: [
+            {
+                path: '',
+                redirectTo: '/app/dashboard',
+                pathMatch: 'full'
+            },
+            {
+                path: 'dashboard',
+                component: homepage_component_1.HomepageComponent
+            },
+            {
+                path: 'd',
+                loadChildren: function () {
+                    return Promise.resolve().then(function () { return require('../app/pages/driver/driver.module'); }).then(function (driver) { return driver.DriverModule; });
+                }
+            },
+            {
+                path: 'v',
+                loadChildren: function () {
+                    return Promise.resolve().then(function () { return require('../app/pages/vehicle/vehicle.module'); }).then(function (vehicle) { return vehicle.VehicleModule; });
+                }
+            },
+            {
+                path: 't',
+                loadChildren: function () {
+                    return Promise.resolve().then(function () { return require('../app/pages/tracking/tracking.module'); }).then(function (tracking) { return tracking.TrackingModule; });
+                }
+            },
+            {
+                path: 'r',
+                loadChildren: function () {
+                    return Promise.resolve().then(function () { return require('../app/pages/route-planning/route-planning.module'); }).then(function (planner) { return planner.RoutePlanningModule; });
+                }
+            },
+            {
+                path: 'i',
+                loadChildren: function () {
+                    return Promise.resolve().then(function () { return require('../app/pages/invoice/invoice.module'); }).then(function (invoice) { return invoice.InvoiceModule; });
+                }
+            },
+            {
+                path: 'rpt',
+                loadChildren: function () {
+                    return Promise.resolve().then(function () { return require('../app/pages/report/report.module'); }).then(function (report) { return report.ReportModule; });
+                }
+            },
+            {
+                path: 'settings',
+                loadChildren: function () {
+                    return Promise.resolve().then(function () { return require('../app/pages/settings/settings.module'); }).then(function (settingModule) { return settingModule.SettingsModule; });
+                }
+            },
+            {
+                path: 'scan',
+                loadChildren: function () {
+                    return Promise.resolve().then(function () { return require('../app/pages/scan/scan.module'); }).then(function (scan) { return scan_module_1.ScanModule; });
+                }
+            }
+        ]
+    },
+    { path: 'scan', loadChildren: function () { return Promise.resolve().then(function () { return require('./pages/scan/scan.module'); }).then(function (m) { return m.ScanModule; }); } }
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = __decorate([
+        core_1.NgModule({
+            imports: [router_1.RouterModule.forRoot(routes)],
+            exports: [router_1.RouterModule]
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+exports.AppRoutingModule = AppRoutingModule;

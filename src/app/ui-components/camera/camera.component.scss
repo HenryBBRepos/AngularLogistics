@@ -1,0 +1,30 @@
+@import "src/color";
+
+mat-dialog-content {
+  overflow-y: hidden;
+  // padding: 10px 0 0 0;
+}
+
+#webcam {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-snap {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #FDC664;
+  color: #fff;
+}
+
+.btn-close-camera {
+  background: $red !important;
+}
+
+

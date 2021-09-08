@@ -1,0 +1,36 @@
+@import "src/color";
+.page-container-section {
+  height: 100vh;
+}
+.table {
+  thead {
+    background: $primary-yellow;
+    color: #000;
+  }
+  th {
+    font-size: .999rem;
+  }
+}
+
+.table-bordered {
+  tbody {
+    tr:nth-of-type(odd) {
+      background: #FFF;
+    }
+    tr:nth-of-type(even) {
+      background: #EFF9FF;
+    }
+  }
+}
+
+.mb-3 {
+  width: 40%;
+  float: right;
+  clear: none;
+}
+
+.page-details {
+  position: fixed;
+  bottom: 0;
+  right: 5;
+}

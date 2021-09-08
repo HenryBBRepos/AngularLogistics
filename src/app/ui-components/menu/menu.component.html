@@ -1,0 +1,48 @@
+<!--Desktop Version-->
+<div class="menu-container">
+
+    <ul class="menu">
+       <li *ngFor="let item of menuList">
+         <a [routerLink]="item.link" routerLinkActive="active">
+           <span [ngClass]="item.iconName"></span>
+           <span>{{item.menuName}}</span>
+         </a>
+       </li>
+
+    </ul>
+</div>
+
+
+<!--Mobile Version-->
+<div [ngClass]="menuContainerMobile">
+  <div class="mobile-profile-container">
+    <div class="heading">
+      <button class="btn btn-transparent btn-menu-close" (click)="close()">X</button>
+    </div>
+    <app-profile-pic class="mobile-profile-view"></app-profile-pic>
+    <hr>
+  </div>
+
+  <ul class="menu-mobile">
+    <li>
+      <a href="#" class="active"><span class="home_i "></span><span>Home</span></a>
+    </li>
+    <li>
+      <a href="#"><span class="driver_ic"></span><span>Drivers</span></a>
+    </li>
+    <li>
+      <a href="#"><span class="vehicles_ic"></span><span>Vehicles</span></a>
+    </li>
+    <li>
+      <a href="#"><span class="tracking_ic"></span><span>Tracking</span></a>
+    </li>
+    <li>
+      <a href="#"><span class="route_ic"></span><span>Route Planning</span></a>
+    </li>
+    <li>
+      <a href="#"><span class="invoices_ic"></span><span>Invoices</span></a>
+    </li>
+    <li><a href="#"><span class="report_ic"></span><span>Report</span></a></li>
+    <li><a href="#"><span class="settings_ic"></span><span>Settings</span></a></li>
+  </ul>
+</div>

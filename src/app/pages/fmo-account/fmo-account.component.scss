@@ -1,0 +1,82 @@
+@import "src/color";
+
+.account-container{
+  display: grid;
+  grid-template-columns: 50% 45%;
+}
+
+//  banner area
+.banner-area{
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.field-section {
+  width: 60%;
+  height: 80vh;
+  //text-align: center;
+  h2 {
+    font-size: 1.955rem;
+    font-weight: bolder;
+    line-height: 6.899rem;
+  }
+  h4 {
+    font-weight: 400;
+    font-size: 1.355rem;
+    line-height: 2.444rem;
+    color: $grey;
+  }
+
+
+  .signup{
+    text-align: left;
+    margin-top: 180px;
+    p {
+      color: $grey;
+      font-weight: lighter;
+    }
+    a {
+      color: #000;
+      font-weight: bolder;
+      text-decoration: none;
+    }
+    
+  
+}
+a{
+    font-size: 16px;
+    text-decoration: underline;
+    color: $deep-sea-blue;
+    line-height: 0px;
+  }
+
+.banner-caption{
+  width: 100%;
+  padding: 20px;
+
+  h3{
+    font-size: 1.3rem;
+    color: #1a68a2;
+    text-transform: uppercase;
+  }
+
+  p{
+    color: #1a68a2;
+    font-weight: lighter;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .account-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-area{
+     display: none;
+  }
+}}

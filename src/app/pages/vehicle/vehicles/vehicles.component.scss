@@ -1,0 +1,114 @@
+.vehicle-container{
+  width: 100%;
+  padding: 20px;
+  background: #EFEFEF !important;
+  height: 100vh;
+  .header{
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    .page-heading{
+      text-align: left;
+      h4{
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    }
+
+
+    .page-filter{
+      display: grid;
+      grid-template-columns: 40% 60%;
+      text-align: right;
+      .ion-android-options{
+        font-size: .990rem;
+        color: #8e8e8e;
+        font-weight: bold;
+      }
+      p{
+        padding: 6px;
+        color: #8e8e8e;
+        font-weight: bold;
+      }
+    }
+
+  }
+
+
+
+  .vehicle-section{
+    .col-lg-4,col-md-4{
+      position: static !important;
+      padding: 15px;
+      .card{
+        box-shadow: 0 0 5px 0 rgba(2, 3, 3, 0.1);
+        border-radius: 10px;
+        height: 300px;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'banner banner'
+        'description description';
+        grid-gap: 0;
+        grid-template-rows: 50% 50%;
+        cursor: pointer;
+        padding: 10px;
+        .vehicle-picture-area {
+          grid-area: banner;
+          background: #E1E1E1;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          height: 150px
+        }
+
+        .qr {
+            z-index: 1000;
+            margin-top: 100px;
+            margin-right: 10px;
+        }
+        .qr-code{
+          float: right;
+          clear: none;
+        }
+
+        .vehicle-description {
+          grid-area: description;
+          padding-top: 30px;
+          text-align: left;
+        }
+
+        .vehicle-description h3 {
+          font-size: .999rem;
+        }
+
+        .vehicle-description p {
+          color: #737272;
+        }
+
+        .btn-more {
+          background: #FDC664;
+          color: #ffffff;
+          height: 30px;
+          width: 100px;
+          padding: 0;
+          float: right;
+          clear: none;
+        }
+
+      }
+
+      .card:hover{
+        box-shadow: 0 0 10px 0 rgba(2, 3, 3, 0.1);
+      }
+    }
+
+    .btn-load-more{
+      background: #1a68a2;
+      border-radius: 30px;
+      margin: auto;
+      color: #fff;
+    }
+  }
+
+}
+
+

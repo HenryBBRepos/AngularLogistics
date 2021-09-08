@@ -1,0 +1,94 @@
+.vehicle-profile-section {
+  background: #EFEFEF;
+  padding: 20px;
+}
+
+
+section .col-lg-12, .col-md-12 {
+  position: static;
+  padding: 15px;
+}
+
+.card-vehicle-profile {
+  box-shadow: none;
+  border: none;
+}
+
+.card-vehicle-profile > .card-header {
+  background: #EFEFEF;
+  border: none;
+}
+
+.btn-save-changes{
+  float: right;
+  height: 25px;
+  width: 200px;
+  padding: 0;
+  color: #fff;
+  font-size: .989rem;
+  background: #FDC664;
+  border: none;
+}
+
+.vehicle-photo-area {
+  width: 20%;
+}
+
+.vehicle-photo-area > img {
+  z-index: 1000;
+  position: relative;
+  height: 150px;
+  width: 190px;
+  border-radius: 10px;
+  bottom: 80px;
+}
+
+.vehicle-description {
+  width: 80%;
+  text-align: left;
+  padding: 10px;
+}
+
+.card-vehicle-profile > .card-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.qr-code {
+  float: right;
+}
+
+.card-vehicle-profile {
+  height: 150px !important;
+}
+
+.info-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  h4 {
+    width: 20%;
+    text-align: left;
+  }
+
+}
+
+.card-information > .card-header {
+  background: #fff;
+  text-align: left;
+}
+
+.info-section-form {
+  width: 80%;
+}
+
+.form-group-inline {
+  padding-top: 10px;
+}
+
+#carType {
+  width: 430px;
+}
+
+

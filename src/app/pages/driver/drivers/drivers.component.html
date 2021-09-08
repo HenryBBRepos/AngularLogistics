@@ -1,0 +1,92 @@
+<div class="driver-container">
+
+  <div class="header">
+
+    <div class="page-heading">
+
+      <h4>Drivers</h4>
+
+    </div>
+
+    <div class="page-filter">
+
+      <p><span class="ion-android-options"></span> Sort By</p>
+
+      <label>
+        <select class="form-control">
+
+          <option>Relevance</option>
+
+        </select>
+      </label>
+
+    </div>
+
+  </div>
+
+
+  <section class="drivers-section">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4" *ngFor="let driver of driverDatasource">
+
+          <div class="card"
+               (click)="viewDriver(driver)">
+
+            <div class="banner-section">
+
+              <qrcode
+                [qrdata]="driver.driverId" class="qr-code"
+                [width]="70"  [errorCorrectionLevel]="'M'"
+                [elementType]="'svg'"></qrcode>
+
+            </div>
+
+            <div class="card-content">
+
+              <div class="profile-box">
+
+                <img
+                  src="../../../assets/images/{{driver.profilePic}}"
+                  alt="Driver Profile Pic" class="image-placeholder">
+
+              </div>
+
+              <div class="driver-profile">
+
+                <div>
+
+                  <p>{{driver.name}}</p>
+
+                  <p><span class="ion-location"></span>&nbsp;{{driver.address}}</p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-12">
+
+         <button class="btn btn-default btn-load-more">Load more</button>
+
+      </div>
+    </div>
+
+  </section>
+
+  <a routerLink="/app/d/drivers/create" class="btn btn-default btn-sticky">
+    <span class="ion-person-add"></span>&nbsp;Register Driver
+  </a>
+
+</div>

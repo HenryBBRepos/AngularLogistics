@@ -1,0 +1,50 @@
+<ul class="navbar">
+    <li>
+      <div class="app-title">
+        <h5>CLIQHAUL 2.0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span>Monitoring Officer Dashboard</span></h5>
+  
+      </div>
+    </li>
+    <li class="toolbar">
+      <div>
+        <a routerLink="#" class="btn btn-default btn-sm btn-scan">
+          <span class="ion-qr-scanner"></span>&nbsp;
+          Scan
+        </a>&nbsp;
+        <div class="input-search">
+          <span class="search"></span>
+            <input
+              type="text"
+              class="input-clq-search"
+              placeholder="Search for Drivers or Vehicles"
+              autocomplete="off"
+              (input)="onSearchInput($event)"/>
+        </div>
+        <a routerLink="#" class="btn btn-default btn-sm btn-notification">
+          <span class="bell-ic"></span>
+        </a>
+        <div [ngClass]="searchDropdown">
+          <app-driver-search-list></app-driver-search-list>
+        </div>
+      </div>
+  
+    </li>
+    <li >
+      <p  id="currentDateTime">{{OfficerNavbarDate.CurrentDate}}</p>
+    </li>
+    <li>
+      <a href="#" (click)="toggleSidebarAction($event)" class="btn btn-default btn-sm">
+        <span class="menu-bar-ic"></span>
+      </a>
+    </li>
+  </ul>
+  
+  
+  
+  <!-- Mobile View -->
+  <div class="navbar-mobile">
+    <a class="menu-bar-ic"></a>
+    <h4>CLIQHAUL 2.0</h4>
+  </div>
+  

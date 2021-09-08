@@ -1,0 +1,77 @@
+@import "src/color";
+
+.account-container{
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
+//  banner area
+.banner-area{
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-section {
+  width: 50%;
+  height: 80vh;
+  //text-align: center;
+  h2 {
+    font-size: 1.955rem;
+    font-weight: bolder;
+    line-height: 6.899rem;
+  }
+  h4 {
+    font-weight: lighter;
+    font-size: 1.955rem;
+    line-height: 2.444rem;
+  }
+  img {
+    width: 500px;
+    height: 300px;
+    margin-top: 0px;
+  }
+
+  .signup{
+    text-align: left;
+    p {
+      color: $grey;
+      font-weight: lighter;
+    }
+    a {
+      color: #000;
+      font-weight: bolder;
+    }
+  
+}
+
+.banner-caption{
+  width: 100%;
+  padding: 20px;
+
+  h3{
+    font-size: 1.3rem;
+    color: #1a68a2;
+    text-transform: uppercase;
+  }
+
+  p{
+    color: #1a68a2;
+    font-weight: lighter;
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+  .account-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-area{
+     display: none;
+  }
+}}
